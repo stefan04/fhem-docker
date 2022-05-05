@@ -108,7 +108,7 @@ jobs:
       
       - name: Docker meta
         id: meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: fhem/fhem-docker
           flavor: |
@@ -277,7 +277,7 @@ jobs:
 
       - name: Docker meta
         id: meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ github.repository_owner }}/fhem/fhem-docker
 
@@ -334,7 +334,7 @@ jobs:
 
       - name: Docker meta
         id: meta_base
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ github.repository_owner }}/fhem/fhem-minimal-docker
           flavor: |
